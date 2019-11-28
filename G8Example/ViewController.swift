@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import G8
 
 class ViewController: UIViewController {
     @IBOutlet weak var label1: UILabel!

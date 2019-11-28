@@ -7,7 +7,7 @@
 
 // swiftlint:disable all
 /// Shortcut
-typealias G8K = G8.Keys
+public typealias G8K = G8.Keys
 
 extension G8 {
     

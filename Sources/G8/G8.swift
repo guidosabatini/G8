@@ -10,7 +10,7 @@ import UIKit
 
 public struct G8 {
     
-    init() {
+    public init() {
         valueAppliers = [G8.themeableLayer,
                          G8.themeableView, 
                          G8.themeableLabel,
