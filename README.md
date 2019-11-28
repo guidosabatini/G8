@@ -1,2 +1,3 @@
 # G8
-Add styles to your UIKit components
+
+A description of this package.
