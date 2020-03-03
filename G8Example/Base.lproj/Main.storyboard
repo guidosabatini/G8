@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2pu-0O-QX7">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2pu-0O-QX7">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -130,12 +130,21 @@
                                     </textView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DTc-vU-ahl">
+                                <rect key="frame" x="155" y="88" width="104" height="30"/>
+                                <state key="normal" title="APPLY STYLES"/>
+                                <connections>
+                                    <action selector="applyAction:" destination="sSL-mB-Cxa" eventType="touchUpInside" id="SY9-wu-6PI"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="VjR-q6-ZTR" firstAttribute="trailing" secondItem="QHL-bj-OXn" secondAttribute="trailing" constant="20" id="JOh-yU-qoc"/>
+                            <constraint firstItem="DTc-vU-ahl" firstAttribute="top" secondItem="VjR-q6-ZTR" secondAttribute="top" id="Ms5-Np-hJz"/>
                             <constraint firstItem="QHL-bj-OXn" firstAttribute="leading" secondItem="VjR-q6-ZTR" secondAttribute="leading" constant="20" id="PoW-Hn-3vq"/>
                             <constraint firstItem="QHL-bj-OXn" firstAttribute="top" secondItem="VjR-q6-ZTR" secondAttribute="top" constant="50" id="Tgh-Zv-DDW"/>
+                            <constraint firstItem="DTc-vU-ahl" firstAttribute="centerX" secondItem="ePO-Ij-Azz" secondAttribute="centerX" id="Ui4-Ph-Swc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VjR-q6-ZTR"/>
                     </view>

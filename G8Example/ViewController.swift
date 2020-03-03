@@ -30,9 +30,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         navigationController?.isNavigationBarHidden = true
         textfield.placeholder = "placeholder"
-        g8.applyStyle(DefaultTheme.viewController, to: self)
     }
 
+    @IBAction func applyAction(_ sender: Any) {
+        g8.applyStyle(DefaultTheme.viewController, to: self)
+    }
+    
     @IBAction func buttonAction(_ sender: Any) {
         button1.isSelected = !button1.isSelected
     }
@@ -51,7 +54,7 @@ class ViewController: UIViewController {
 enum ThemeConstants {
     enum Colors {
         static let brand = UIColor(red: 0.4, green: 0.7, blue: 0.1, alpha: 1)
-        static let commonText = UIColor(named: "CommonText")
+        static let commonText = UIColor(named: "CommonText") // from assets
         static let background = UIColor(white: 0.9, alpha: 1)
     }
     enum FontNames {
@@ -64,7 +67,7 @@ enum ThemeConstants {
     }
 }
 
-struct DefaultTheme {
+enum DefaultTheme {
     static let commonLabel: G8Style = [
         G8K.Label.textColor: ThemeConstants.Colors.commonText,
         G8K.Label.font: ThemeConstants.Fonts.common
@@ -78,8 +81,6 @@ struct DefaultTheme {
         "label1.textColor": UIColor.red,
         "label2": boldLabel,
         "label3": commonLabelColored,
-//        "colorView.backgroundColor": ThemeConstants.Colors.background,
-//        "colorView.\(GK.View.backgroundColor)": ThemeConstants.Colors.background,
         "label4": [
             G8K.Label.font: UIFont.italicSystemFont(ofSize: 30),
             G8K.Label.textColor: UIColor.darkGray,
@@ -89,6 +90,11 @@ struct DefaultTheme {
         "colorView": [
             G8K.View.backgroundColor: ThemeConstants.Colors.background
         ],
+        /*
+        // alternative ways
+        "colorView.backgroundColor": ThemeConstants.Colors.background,
+        "colorView.\(GK.View.backgroundColor)": ThemeConstants.Colors.background,
+         */
         "button1": [
             G8K.Button.titleFont: UIFont.italicSystemFont(ofSize: 16),
             G8K.Button.titleColor: UIColor.green,
