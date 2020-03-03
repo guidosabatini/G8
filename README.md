@@ -17,7 +17,7 @@ Define uniform styles for all your labels, buttons and other views and apply the
 - Guided way to find customizable UIKit properties, thanks to predefined enums
 - Almost all UIKit views managed
 
-![Example](https://raw.githubusercontent.com/SysdataSpA/Giotto/master/example.gif)
+![Example](https://github.com/guidosabatini/G8/raw/master/example.gif)
 
 ## Installation
 
